@@ -49,3 +49,53 @@ FROM
 	"CoffeeSales"
 GROUP BY 
 	coffee_name
+
+-- 6. Calculate the total sales for each week
+SELECT 
+    EXTRACT(YEAR FROM date) AS year,
+    EXTRACT(WEEK FROM date) AS week,
+    SUM(money) AS total_sales
+FROM 
+    "CoffeeSales"
+GROUP BY 
+    year, week
+ORDER BY 
+    year, week;
+
+-- 7. Calculate the most popular drinks by week
+SELECT 
+    EXTRACT(YEAR FROM date) AS year,
+    EXTRACT(WEEK FROM date) AS week,
+    coffee_name,
+    COUNT(*) AS order_count
+FROM 
+    "CoffeeSales"
+GROUP BY 
+    year, week, coffee_name
+ORDER BY 
+    year, week, order_count DESC;
+
+-- 8. Calculate the total sales for each month
+SELECT 
+    EXTRACT(YEAR FROM date) AS year,
+    EXTRACT(MONTH FROM date) AS month,
+    SUM(money) AS total_sales
+FROM 
+    "CoffeeSales"
+GROUP BY 
+    year, month
+ORDER BY 
+    year, month;
+
+-- 9. Calculate the most popular drinks by month	
+SELECT 
+    EXTRACT(YEAR FROM date) AS year,
+    EXTRACT(MONTH FROM date) AS month,
+    coffee_name,
+    COUNT(*) AS order_count
+FROM 
+    "CoffeeSales"
+GROUP BY 
+    year, month, coffee_name
+ORDER BY 
+    year, month, order_count DESC;
