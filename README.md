@@ -12,5 +12,7 @@ The main objective of this project is to perform an in-depth analysis of coffee 
 4. **What is the total revenue generated during the entire period?**
 5. **What is the average selling price for each coffee?**
 6. **Which coffee drinks are the highest earners on a yearly basis?**
+7. **What the total sales for each week/month?**
+8. **Which coffee the most popular by week/month?**
 
 The analysis utilizes SQL queries to process the data and present results based on various factors, including sales revenue, order frequency, time of day, and more.
