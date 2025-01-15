@@ -1,6 +1,6 @@
 # Exploring Coffee Sales Trends
 
-This project aims to explore and analyze coffee sales trends to uncover valuable insights from a dataset of coffee sales transactions. The project leverages SQL queries and data analysis techniques to answer key questions about coffee sales performance, such as the most popular drinks, highest revenue-generating categories, and sales trends over time.
+This project aims to explore and analyze coffee sales trends to uncover valuable insights from a dataset from Kaggle of coffee sales transactions. The project leverages SQL queries and data analysis techniques to answer key questions about coffee sales performance, such as the most popular drinks, highest revenue-generating categories, and sales trends over time.
 
 ## Project Overview
 
